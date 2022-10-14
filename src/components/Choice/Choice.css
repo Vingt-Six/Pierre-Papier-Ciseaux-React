@@ -1,0 +1,65 @@
+.choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 305px;
+    width: 305px;
+    transition: 0.4s;
+    background: conic-gradient(
+        #3dffc9, #f7c723,
+        #eb0ea5, #3dffc9
+    );
+    border-radius: 50%;
+    animation: 1s linear 0s infinite circle;
+}
+
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.blocChoice {
+    width: 295px;
+    height: 295px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    animation: none;
+    border-radius: 50%;
+    animation: 1s linear 0s infinite smallCircle;
+}
+
+@keyframes smallCircle {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+.choice button {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #d379f1;
+}
+
+.choice button:hover {
+    background-color: #9c3ebb;
+    cursor: pointer;
+}
+
+.choice:hover {
+    scale: 1.3;
+    transition: 0.8s;
+}
